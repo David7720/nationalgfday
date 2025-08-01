@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To My Love</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      color: #5e2b2b;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scrolling-text {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 50px;
+      box-sizing: border-box;
+      text-align: center;
+      animation: scrollUp 90s linear forwards;
+      font-size: 20px;
+      line-height: 1.8;
+      z-index: 2;
+    }
+
+    @keyframes scrollUp {
+      0% { top: 100%; }
+      100% { top: -300%; }
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #b03060;
+    }
+
+    audio {
+      display: none;
+    }
+
+    .petal {
+      position: fixed;
+      top: -50px;
+      width: 20px;
+      height: 20px;
+      background: url('https://pngimg.com/uploads/rose/rose_PNG96940.png') no-repeat center center;
+      background-size: contain;
+      pointer-events: none;
+      animation: fall linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(120vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="scrolling-text">
+      <h1>To My Love 💌</h1>
+      <p>Dear JueJue,</p>
+      <p>
+        On this beautiful day — National Girlfriend Day — I want you to know how deeply loved you are.
+        Even though distance stretches between us, you're closer to my heart than anyone has ever been.
+        Every good morning text, every late-night call, every silly emoji, every single moment and second we've shared they all mean the world to me.
+      </p>
+      <p>
+        I know life can get busy. I know sometimes you feel like you're not giving enough, but the truth is, your love in whatever way it arrives or however long it takes, is more than enough for me.
+        You've taught me kindness, patience, real love, and how beautiful it is to wait for something worth it.
+      </p>
+      <p>
+        I will keep choosing you, even across thousand of miles, time zones, and challenges. I’ll hold you down, like the song says — even when it’s hard.
+        You're not just my girlfriend. You're my person. My future wife. My home. My safe space. My peace.
+      </p>
+      <p>
+        Yours forever,<br>
+        David (APP)
+      </p>
+    </div>
+  </div>
+
+  <!-- Falling Petals Script -->
+  <script>
+    const numPetals = 30;
+    for (let i = 0; i < numPetals; i++) {
+      const petal = document.createElement('div');
+      petal.className = 'petal';
+      petal.style.left = Math.random() * 100 + 'vw';
+      petal.style.animationDuration = 8 + Math.random() * 5 + 's';
+      petal.style.animationDelay = Math.random() * 10 + 's';
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <!-- Background Audio -->
+  <audio autoplay loop>
+    <source src="c:\Users\MSI GF63\Downloads\Best Part - Daniel Caesar ft. H.E.R. (Acoustic Instrumental).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=I7nxU_S3How&list=RDI7nxU_S3How&start_radio=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
